@@ -1,17 +1,19 @@
+import java.util.*;
+
 public class FizzBuzz {
 
-    public void displayFizz() {
+    public void displayFizz(List<String> myList) {
 
         for (int index = 1; index <= 100; index++) {
 
             if (index % 3 == 0 && index % 5 == 0)
-                System.out.println("fizzbuzz");
+                myList.add("fizzbuzz");
             else if (index % 5 == 0)
-                System.out.println("buzz");
+                myList.add("buzz");
             else if (index % 3 == 0)
-                System.out.println("fizz");
+                myList.add("fizz");
             else
-                System.out.println(index);
+                myList.add(Integer.toString(index));
 
         }
 
